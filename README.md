@@ -2,6 +2,15 @@
 
 
 # Code Plagiarism Detection System
+This project is a Code Plagiarism Detection System designed to identify similar code snippets across repositories. It retrieves and indexes code, then uses FAISS, CodeBERT embeddings, and LLMs to assess whether a given code snippet is plagiarized.
+
+The system follows a Retrieval-Augmented Generation (RAG) approach, where it first retrieves relevant code snippets and then evaluates plagiarism using an LLM. It provides two evaluation methods:
+
+RAG-Based Evaluation – Uses vector similarity search to find similar code.
+
+LLM-Based Evaluation – Leverages a language model to determine plagiarism likelihood.
+
+Built with FastAPI, the system offers an API for checking code similarities, and it includes evaluation scripts to measure precision and recall. The project is containerized with Docker for easy deployment.
 
 ## Overview
 This project is a **code plagiarism detection system** that:
