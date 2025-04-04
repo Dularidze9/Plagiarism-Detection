@@ -1,0 +1,10 @@
+fastapi
+uvicorn
+transformers
+torch
+faiss-cpu
+pydantic
+gitpython
+pygments
+langchain
+scikit-learn
