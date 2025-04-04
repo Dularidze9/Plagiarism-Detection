@@ -3,7 +3,7 @@
 
 # Code Plagiarism Detection System
 
-## 🚀 Overview
+## Overview
 This project is a **code plagiarism detection system** that:
 - Clones and indexes code from GitHub repositories
 - Uses **CodeBERT** to embed and compare code snippets
@@ -13,7 +13,7 @@ This project is a **code plagiarism detection system** that:
 
 ---
 
-## 📌 Features
+## Features
 - **Automated Repository Cloning**: Fetches and processes GitHub repositories.
 - **Multi-Language Support**: Detects and indexes different programming languages.
 - **FAISS-based Code Retrieval**: Efficient similarity search for large datasets.
@@ -24,25 +24,25 @@ This project is a **code plagiarism detection system** that:
 
 ---
 
-## 🛠️ Setup & Installation
-### 🔹 1. Clone the Repository
+##  Setup & Installation
+### 1. Clone the Repository
 ```bash
  git clone https://github.com/your-username/your-repo.git
  cd your-repo
 ```
 
-### 🔹 2. Install Dependencies (Locally)
+### 2. Install Dependencies (Locally)
 Ensure you have **Python 3.8+** installed.
 ```bash
 pip install -r requirements.txt
 ```
 
-### 🔹 3. Run the API
+### 3. Run the API
 ```bash
 uvicorn main:app --reload
 ```
 
-### 🔹 4. Test the API
+### 4. Test the API
 Once running, visit:
 ```
 http://127.0.0.1:8000/docs
@@ -50,21 +50,21 @@ http://127.0.0.1:8000/docs
 
 ---
 
-## 🐳 Running with Docker
-### 🔹 1. Build and Run the Docker Container
+##  Running with Docker
+###  1. Build and Run the Docker Container
 ```bash
 docker build -t plagiarism-checker .
 docker run -p 8000:8000 plagiarism-checker
 ```
-### 🔹 2. Test the API in Docker
+###  2. Test the API in Docker
 ```
 http://localhost:8000/docs
 ```
 
 ---
 
-## 📡 API Endpoints
-### 🔹 **Check Plagiarism**
+##  API Endpoints
+###  **Check Plagiarism**
 **Endpoint:**
 ```http
 POST /check_plagiarism
@@ -85,29 +85,29 @@ POST /check_plagiarism
 
 ---
 
-## 📊 Evaluation
-### 🔹 Run Retrieval Evaluation
+## Evaluation
+###  Run Retrieval Evaluation
 ```bash
 python evaluate.py
 ```
 
-### 🔹 Run LLM Assessment
+### Run LLM Assessment
 ```bash
 python llm_assessment.py
 ```
 
 ---
 
-## 📁 Project Structure
+##  Project Structure
 ```
-📂 your-repo/
-├── 📄 main.py  # FastAPI app with plagiarism detection
-├── 📄 embeddings_service.py  # Embedding & FAISS setup
-├── 📄 evaluate.py  # Retrieval evaluation script
-├── 📄 llm_assessment.py  # LLM-based evaluation
-├── 📄 Dockerfile  # Docker setup
-├── 📄 requirements.txt  # Dependencies
-├── 📂 repos/  # Cloned repositories (ignored in .gitignore)
+ your-repo/
+├──  main.py  # FastAPI app with plagiarism detection
+├──  embeddings_service.py  # Embedding & FAISS setup
+├──  evaluate.py  # Retrieval evaluation script
+├──  llm_assessment.py  # LLM-based evaluation
+├──  Dockerfile  # Docker setup
+├──  requirements.txt  # Dependencies
+├──  repos/  # Cloned repositories (ignored in .gitignore)
 ```
 
 ---
